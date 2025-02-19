@@ -1,0 +1,216 @@
+/*** Badges Loyalty Color Palette ***/
+
+.omp {
+    &-loyalty-badge {
+        &-tier1 {
+            &-100 { color: var(--loyalty-badge-tier1-100, #8d8e91); }
+            &-200 { color: var(--loyalty-badge-tier1-200, #68686b); }
+            &-300 { color: var(--loyalty-badge-tier1-300, #383838); }
+            &-400 { color: var(--loyalty-badge-tier1-400, #000000); }
+        }
+        &-tier2 {
+            &-100 { color: var(--loyalty-badge-tier2-100, #6590ad); }
+            &-200 { color: var(--loyalty-badge-tier2-200, #4b718c); }
+            &-300 { color: var(--loyalty-badge-tier2-300, #345064); }
+            &-400 { color: var(--loyalty-badge-tier2-400, #182f3e); }          
+        }
+        &-tier3 {
+            &-100 { color: var(--loyalty-badge-tier3-100, #8973b1); }
+            &-200 { color: var(--loyalty-badge-tier3-200, #644f8b); } 
+            &-300 { color: var(--loyalty-badge-tier3-300, #393248); }
+            &-400 { color: var(--loyalty-badge-tier3-400, #16131d); }             
+        }
+        &-tier4 {
+            &-100 { color: var(--loyalty-badge-tier4-100, #c7883b); }
+            &-200 { color: var(--loyalty-badge-tier4-200, #9f6a29); }
+            &-300 { color: var(--loyalty-badge-tier4-300, #864f0c); }
+            &-400 { color: var(--loyalty-badge-tier4-400, #472b12); }
+        }
+        &-tier5 {
+            &-100 { color: var(--loyalty-badge-tier5-100, #a3a4a8); }
+            &-200 { color: var(--loyalty-badge-tier5-200, #7a7b80); }
+            &-300 { color: var(--loyalty-badge-tier5-300, #494a4d); }
+            &-400 { color: var(--loyalty-badge-tier5-400, #2d2d2e); }
+        }
+        &-tier6 {
+            &-100 { color: var(--loyalty-badge-tier6-100, #5261a1); }
+            &-200 { color: var(--loyalty-badge-tier6-200, #33478c); }
+            &-300 { color: var(--loyalty-badge-tier6-300, #1f2c59); }
+            &-400 { color: var(--loyalty-badge-tier6-400, #0d1840); }
+        }
+        &-tier7 {
+            &-100 { color: #2E2E2E }         
+        }
+
+        &-tier8 {
+            &-100 { color: #ffffff } 
+        }        
+
+    }
+   
+    /*** Badges Background Color Pallete ***/
+    &-bg-loyalty-badge {
+        &-tier1 {
+            &-100 { background-color: var(--loyalty-badge-tier1-100, #8d8e91); }   //delta 360 
+            &-200 { background-color: var(--loyalty-badge-tier1-200, #68686b); }
+            &-300 { background-color: var(--loyalty-badge-tier1-300, #383838); }
+            &-400 { background-color: var(--loyalty-badge-tier1-400, #000000); }
+        }
+        &-tier2 {
+            &-100 { background-color: var(--loyalty-badge-tier2-100, #6590ad); }  //diamond
+            &-200 { background-color: var(--loyalty-badge-tier2-200, #4b718c); }   
+            &-200 { background-color: var(--loyalty-badge-tier2-200, #345064); }   
+            &-200 { background-color: var(--loyalty-badge-tier2-200, #4b718c); }  
+        }
+        &-tier3 {
+            &-100 { background-color: var(--loyalty-badge-tier3-100, #8973b1); } //platinum
+            &-200 { background-color: var(--loyalty-badge-tier3-200, #644f8b); }
+            &-300 { background-color: var(--loyalty-badge-tier3-300, #393248); }
+            &-400 { background-color: var(--loyalty-badge-tier3-400, #16131d); }
+        }
+        &-tier4 {
+            &-100 { background-color: var(--loyalty-badge-tier4-100, #c7883b); }    //gold
+            &-200 { background-color: var(--loyalty-badge-tier4-200, #9f6a29); }
+            &-300 { background-color: var(--loyalty-badge-tier4-300, #864f0c); }   
+            &-400 { background-color: var(--loyalty-badge-tier4-400, #472b12); }
+        }
+        &-tier5 {
+            &-100 { background-color: var(--loyalty-badge-tier5-100, #a3a4a8); }        //silver
+            &-100-nm { background: none; border: 0.063rem solid #FFFFFF; border-radius: 0.375rem; }
+            &-200 { background-color: var(--loyalty-badge-tier5-200, #7a7b80); }
+            &-300 { background-color: var(--loyalty-badge-tier5-300, #494a4d); }
+            &-400 { background-color: var(--loyalty-badge-tier5-400, #2d2d2e); }
+        }
+        &-tier6 {
+           &-100 { background-color: var(--loyalty-badge-tier6-100, #5261a1); }     //skymiles
+           &-200 { background-color: var(--loyalty-badge-tier6-200, #33478c); }
+           &-300 { background-color: var(--loyalty-badge-tier6-300, #1f2c59); }
+           &-400 { background-color: var(--loyalty-badge-tier6-400, #0d1840); }
+        }
+
+        //NM was missing - added here
+        &-tier7 {
+            &-100 { background-color: var(--loyalty-badge-tier7-100, #CCD0DE ); color: #2E2E2E }          
+         }
+
+         &-tier8 {
+            &-100 { background-color: #2e2e2e;   color: #ffffff } 
+         }
+        
+    }
+            
+    /*** Badging ***/
+    &-badge {
+       /*  font-family: 'Medium', 'Lato', 'Roboto'; */
+        display: inline-block;
+        border-radius: 0.5rem;
+        padding: 0.188rem 0.188rem 0.313rem;
+        margin: 0 0.188rem 0.188rem;
+        line-height: 0.875rem;
+        font-size: 0.75rem;
+        text-align: center; 
+        
+        .badge-header {          
+            font-size:0.875rem;
+            font-weight:400;
+            width:1.375rem;
+            .FF {background-color: var(--loyalty-badge-tier6-200, #7a7b80) ;} //as per Figma #33478C
+            .PM {background-color: var(--loyalty-badge-tier3-200, #644F8B) ;}
+            .GM {background-color: var(--loyalty-badge-tier4-200, #9F6A29) ;}
+            .SM {background-color: var(--loyalty-badge-tier5-200, #7A7B80) ;}
+            .DM {background-color: var(--loyalty-badge-tier2-200, #4B718C) ;}
+            .FO {background-color: var(--loyalty-badge-tier2-200, #4B718C) ;}
+            .NM {background-color: var(--loyalty-badge-tier2-200, #4B718C) ;}
+            .ThreeSixty {background-color: var(--loyalty-badge-tier2-200, #4B718C) ;}
+        }
+
+        .badge-description {
+            font-size: 0.875rem;
+            font-weight: 400;            
+            .freq-flyer {background-color: var(--loyalty-badge-tier6-100, #5261a1) ;}
+            .platinum-medallion {background-color: var(--loyalty-badge-tier3-100, #8973B1) ;}
+            .gold-medallion {background-color: var(--loyalty-badge-tier4-100, #C7883B) ;}
+            .silver-medallion {background-color: var(--loyalty-badge-tier5-100, #A3A4A8) ;}
+            .diamond-medallion {background-color: var(--loyalty-badge-tier2-100, #6590AD) ;}
+        }
+
+        .badge-long {
+            //font-family: 'Medium', 'Lato', 'Roboto' !important;
+            display: inline-block;
+            padding: 0.125rem 0.313rem;
+            text-align: center;
+            font-size: 1rem; 
+            &-left { border-radius: 0.5rem 0 0 0.5rem; }
+            &-right { border-radius: 0 0.5rem 0.5rem 0; }
+        }
+            
+        .badge-mini { width: 1.375rem; }
+
+        .badge-fs {
+            font-size: var(--font-sm-400, .875rem);
+        }
+
+        .badge-trip-status {
+            font-weight: 600;
+            font-size: var(--font-sm-400, .875rem);
+            font-style: normal;
+            line-height: 1rem;
+        }
+    
+        .badge-border { 
+            border: 0.063rem solid var(--secondaryColor-400, #a3a6b1); 
+            padding: 0.125rem 0.313rem; 
+
+            &-top { border-top: 0.063rem solid var(--secondaryColor-400, #a3a6b1); }
+            &-bottom { border-bottom: 0.063rem solid var(--secondaryColor-400, #a3a6b1); } 
+            &-right { border-right: 0.063rem solid var(--secondaryColor-400, #a3a6b1); }
+            &-left { border-left: 0.063rem solid var(--secondaryColor-400, #a3a6b1); }
+        }
+        .badge-icon {
+           &-warning { background-color: #fff; color: var(--notification-warning, #e14b00); }
+           &-success { background-color: #fff; color: var(--notification-success, #008a00); } 
+           &-danger { background-color: #fff; color: var(--notification-danger, #df1836); }
+           &-circle {  border-radius: 50%; padding: 0.063rem; }
+        }
+        .badge-padding { border: 0.063rem solid transparent; padding: 0.125rem 0.313rem; }
+        .badge-success { color: #fff; background-color: var(--notification-success, #008a00); } 
+        .badge-warning { color: #fff; background-color: var(--notification-warning, #e14b00); }
+        .badge-danger { color: #fff; background-color: var(--notification-danger, #df1836); }
+    }
+
+    /*** SIGNUP BADGE  ***/
+    &-link-sign-up {
+        background-color: var(--loyalty-tier6-200, #33478c);
+        border: 0.063rem solid var(--loyalty-tier6-200, #33478c);
+        margin: 0.313rem 0 0 -0.188rem;
+        position: absolute;
+        border-radius: 0 0.375rem 0.375rem 0; }
+
+    &-badge-sign-up-icon {
+        position: relative;
+        font-size: 1.25rem;
+        color: #fff;
+        text-align: justify;
+        vertical-align: text-top;
+        margin-top: -0.188rem;
+        top: 0.125rem; }
+    &-remove-badge-radius-right {
+        border-radius: 0.375rem 0 0 0.375rem; }
+
+    &-glyphicons {
+        width: 11px;
+        height: 11px;
+        color: #2E2E2E;
+    }
+
+    &-ticket-badges {
+        background: #FFFFFF;
+        border: 1px solid #2E2E2E;
+        border-radius: 10px;
+        padding: 2px 8px;
+        color: #2E2E2E;
+    }
+
+    
+}
+

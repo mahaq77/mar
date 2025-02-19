@@ -1,0 +1,295 @@
+.omp {
+  &-text {
+    &-primary {
+      color: #2e2e2e;
+    }
+
+    &-link {
+      color: #0291de;
+    }
+
+    &-error {
+      color: #f00c00;
+    }
+
+    &-disabled {
+      color: #a3a3a3;
+    }
+  }
+
+  &-error-bg {
+    background: #f00c00 !important;
+  }
+
+  &-flydelta-grey {
+    background: #a3a4a8 !important;
+  }
+
+  &-flydelta-red {
+    background: #df1836 !important;
+  }
+
+  &-flydelta-dark-grey {
+    background: #7a7b80 !important;
+  }
+
+  &-flydelta-360 {
+    background: #7a7b80 !important;
+  }
+
+  &-credit-card-100 {
+    background: #4470c3 !important;
+  }
+
+  &-credit-card-200 {
+    background: #9f6a29 !important;
+  }
+
+  &-credit-card-300 {
+    background: #644f8b !important;
+  }
+
+  &-credit-card-400 {
+    background: #135e6c !important;
+  }
+
+  &-status-ontime {
+    //Status Codes 0, 16 - On Time
+    background: #008a00 !important;
+  }
+
+  &-status-boarding {
+    //Status Codes 4, 5 – Boarding
+    background: #008a00 !important;
+  }
+
+  &-status-flown {
+    //Flown
+    background: #4470c3 !important;
+  }
+
+  &-status-delayed {
+    //Delayed - Status Codes 1, 2, 3, 14, 15
+    background: #e14b00 !important;
+  }
+
+  &-status-awaiting-takeoff {
+    //Awaiting Status Codes 6
+    background: #e14b00 !important;
+  }
+
+  &-status-canceled {
+    //Canceled  13, 18
+    background: #f00c00 !important;
+  }
+
+  &-status-leaving32m {
+    //Leaving 32m
+    background: #0f8577 !important;
+  }
+
+  &-status-refund-processed {
+    //Refund Processed
+    background: #008a00 !important;
+  }
+
+  &-status-completed {
+    //Completed  - Status Codes 10, 11, 12
+    background: #686868 !important;
+  }
+
+  &-status-landed {
+    //Landed -  Status Codes 9
+    background: #008a00 !important;
+  }
+
+  &-status-inflight {
+    //Inflight    7, 8, 19
+    background: #0f8577 !important;
+  }
+
+  &-status-diverted {
+    //Diverted  17
+    background: #686868 !important;
+  }
+
+  &-msg-default {
+    background: #a3a4a8 !important;
+    border: 1px solid #808080 !important;
+    border-radius: 4px !important;
+    color: #2e2e2e !important;
+  }
+
+  &-msg-general {
+    background: #dff1fa !important; //cyan/20
+    border: 1px solid #0291de !important;
+    border-radius: 4px !important;
+    color: #2e2e2e !important;
+  }
+
+  &-msg-confirmation {
+    background: #d9eed9 !important; /* utility / orange */
+    border: 1px solid #008a00 !important;
+    border-radius: 4px !important;
+    color: #2e2e2e !important;
+  }
+
+  &-msg-notice {
+    background: #fbe9e0 !important; /* utility/green */
+    border: 1px solid #e14b00 !important;
+    border-radius: 4px !important;
+    color: #2e2e2e !important;
+  }
+
+  &-msg-warning {
+    background: #f9d1d7 !important; /* utility / red 20 */
+    border: 1px solid #f00c00 !important;
+    border-radius: 4px !important;
+    color: #2e2e2e !important;
+  }
+
+  //forms and buttons already hanled at styles.scss
+
+  &-modal {
+    background: #1d284e;
+    color: #ffffff;
+
+    &-divider {
+      color: #474f73;
+    }
+
+    &-container {
+      background: #ccd0de;
+    }
+  }
+
+  &-brand {
+    &-navy {
+      color: #0b1f66;
+    }
+
+    &-delta-red {
+      color: #df1836;
+    }
+
+    &-white {
+      color: #fff;
+    }
+  }
+
+  &-alert {
+    &-high {
+      color: #f00c00;
+    }
+
+    &-mid {
+      color: #e14b00;
+    }
+
+    &-success {
+      color: #008a00;
+    }
+  }
+  &-border {
+    &-tier1 {
+      &-100 {
+        border: solid 1px var(--loyalty-badge-tier1-100, #8d8e91);
+      }
+      &-200 {
+        border: solid 1px var(--loyalty-badge-tier1-200, #68686b);
+      }
+      &-300 {
+        border: solid 1px var(--loyalty-badge-tier1-300, #383838);
+      }
+      &-400 {
+        border: solid 1px var(--loyalty-badge-tier1-400, #000000);
+      }
+    }
+    &-tier2 {
+      &-100 {
+        border: solid 1px var(--loyalty-badge-tier2-100, #6590ad);
+      }
+      &-200 {
+        border: solid 1px var(--loyalty-badge-tier2-200, #4b718c);
+      }
+      &-300 {
+        border: solid 1px var(--loyalty-badge-tier2-300, #345064);
+      }
+      &-400 {
+        border: solid 1px var(--loyalty-badge-tier2-400, #182f3e);
+      }
+    }
+
+    &-tier3 {
+      &-100 {
+        border: solid 1px var(--loyalty-badge-tier3-100, #8973b1);
+      }
+      &-200 {
+        border: solid 1px var(--loyalty-badge-tier3-200, #644f8b);
+      }
+      &-300 {
+        border: solid 1px var(--loyalty-badge-tier3-300, #393248);
+      }
+      &-400 {
+        border: solid 1px var(--loyalty-badge-tier3-400, #16131d);
+      }
+    }
+
+    &-tier4 {
+      &-100 {
+        border: solid 1px var(--loyalty-badge-tier4-100, #c7883b);
+      }
+      &-200 {
+        border: solid 1px var(--loyalty-badge-tier4-200, #9f6a29);
+      }
+      &-300 {
+        border: solid 1px var(--loyalty-badge-tier4-300, #864f0c);
+      }
+      &-400 {
+        border: solid 1px var(--loyalty-badge-tier4-400, #472b12);
+      }
+    }
+
+    &-tier5 {
+      &-100 {
+        border: solid 1px var(--loyalty-badge-tier5-100, #a3a4a8);
+      }
+      &-200 {
+        border: solid 1px var(--loyalty-badge-tier5-200, #7a7b80);
+      }
+      &-300 {
+        border: solid 1px var(--loyalty-badge-tier5-300, #494a4d);
+      }
+      &-400 {
+        border: solid 1px var(--loyalty-badge-tier5-400, #2d2d2e);
+      }
+    }
+
+    &-tier6 {
+      &-100 {
+        border: solid 1px var(--loyalty-badge-tier6-100, #5261a1);
+      }
+      &-200 {
+        border: solid 1px var(--loyalty-badge-tier6-200, #33478c);
+      }
+      &-300 {
+        border: solid 1px var(--loyalty-badge-tier6-300, #1f2c59);
+      }
+      &-400 {
+        border: solid 1px var(--loyalty-badge-tier5-400, #0d1840);
+      }
+    }
+
+    &-tier7 {
+      &-100 {
+        border: solid 1px var(--loyalty-badge-tier7-100, #2e2e2e);
+      }
+    }
+
+    &-tier8 {
+      &-100 {
+        border: solid 1px var(--loyalty-badge-tier8-100, #ffffff);
+      }
+    }
+  }
+}

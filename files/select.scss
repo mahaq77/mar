@@ -1,0 +1,92 @@
+.omp-select {
+  &.mat-form-field-appearance-fill {
+    .mat-select-arrow-wrapper {
+      display: block;
+    }
+    .mat-form-field-flex {
+      background: #000724 !important;
+      border-radius: 0;
+      padding: 0.5em 1.25em 0 1.25em;
+    }
+    .mat-form-field-infix {
+      min-width: 154px;
+      width: auto;
+      padding: 0.5em 0 0.5em 0;
+      font-size: 18px;
+    }
+    .mat-form-field-label {
+      color: white;
+      padding-left: 4px;
+      transform: translateY(-0.59375em) scale(1) !important; //to set the font size
+    }
+    .mat-select-value {
+      transform: translateX(-0.2em) scale(0.9);
+      color: white;
+    }
+    .mat-select-arrow {
+      color: #0291de;
+    }
+    .mat-select-trigger {
+      padding: 4px;
+    }
+
+    mat-form-field span.mat-form-field-label-wrapper label {
+      color: #ffffff !important;
+      font-weight: 600;
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+    }
+
+    mat-form-field.mat-focused span.mat-form-field-label-wrapper label {
+      color: #ffffff !important;
+    }
+  }
+
+  &:hover {
+    &.mat-form-field-appearance-fill {
+      .mat-select-trigger {
+        border-radius: 4px;        
+      }
+    }
+  }
+
+  &.mat-focused {
+    .mat-select-trigger {
+      border: 1px solid white;
+      border-radius: 4px;
+    }
+  }
+  
+}
+
+.omp-select-font {
+  .mat-select-value-text {
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+
+.mat-select-placeholder{
+  font-size: 1rem;
+}
+
+//import these 2
+
+/*
+  <div>
+    <mat-form-field appearance="fill" class="omp-select">
+        <mat-label>Current status</mat-label>
+        <mat-select>   <!-- [formControl]="selected" [errorStateMatcher]="matcher" -->
+          <mat-option>Clear</mat-option>
+          <mat-option value="valid">Available 45:23</mat-option>
+          <mat-option value="invalid">Invalid option</mat-option>
+        </mat-select>
+        <!--  <mat-hint>Errors appear instantly!</mat-hint>
+        <mat-error *ngIf="selected.hasError('required')">You must make a selection</mat-error>
+        <mat-error *ngIf="selected.hasError('pattern') && !selected.hasError('required')">
+          Your selection is invalid
+        </mat-error> -->
+      </mat-form-field>
+</div>
+*/

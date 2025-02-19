@@ -1,0 +1,68 @@
+
+
+.omp-input-calender-fields {
+  .omp-input-txt {
+    height: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    padding-left: 0.375rem;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0;
+    color: #2e2e2e;
+    &:disabled {
+      color: #a3a3a3;
+    }
+  }
+
+  .omp-label-txt {
+    //placeholder text for <mat-label>
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    height: 1rem;
+    left: 0.5rem;
+    top: 0.5rem;
+    color: var(--font-primaryColor, #656a7b);
+    background-color: transparent;
+    display: block;
+  }
+
+  &:hover {
+    //for the input boxes
+    .mat-form-field-flex {
+      background-color: #dff1fa;
+    }
+
+    .omp-label-txt {
+      color: #2e2e2e;
+    }
+
+    .mat-form-field-ripple {
+      //box-shadow from figma is bottom border color of the box while hovering
+      background-color: #888888 !important ;
+    }
+  }
+  ::ng-deep .mat-form-field.mat-focused {
+      .mat-form-field-ripple.mat-accent {
+        background-color: yellow !important;
+      }
+  }
+}
+
+//these classes are not part of material calendar --  so cdk-overlay-container -  is placed outside of the block
+
+
+
+::ng-deep .mat-calendar-body-cell-content {
+  border-radius: 0 !important;
+}
+
+::ng-deep .mat-calendar-body-selected {
+  background: #1D284E;
+  ;
+}

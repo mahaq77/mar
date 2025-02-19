@@ -1,0 +1,68 @@
+.omp-chip {
+  &.mat-standard-chip {
+    &.mat-chip-with-trailing-icon {
+      background: #0291de !important;
+      color: #fff !important;
+      font-weight: 600;
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+    }
+
+    button {
+      background: transparent;
+      border: none;
+      .mat-icon {
+        color: #fff !important;
+        position: absolute;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  &::after {
+    background: #0291de !important;
+  }
+
+  &:focus {
+    &.mat-focus-indicator:focus::after {
+      //this focus is not exactly like Figma Design
+      background: #0291de !important;
+      border: 1px solid #fff !important;
+      margin: 2px;
+    }
+  }
+
+  &:hover {
+    &.mat-standard-chip {
+      background: #1187cc;
+    }
+  }
+}
+
+
+//similar to chips so added here
+
+.omp {
+  &-circle {  
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 0.938rem;
+    margin-bottom: 0.5rem;   
+    border-radius: 50%;
+    border: 1px solid;
+
+    &-200 {     
+      border: 2px solid;
+    }
+
+    &-250 {     
+      border: 2.5px solid;
+    }
+    &-300 {    
+      border: 3px solid;
+    }
+  }
+}
+//<span class="omp-circle omp-circle-250">
+
+

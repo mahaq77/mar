@@ -1,0 +1,22 @@
+.omp-drawer {
+  &-container {
+    position: fixed;
+    visibility: hidden;
+  }
+  &-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  &-sidenav {
+    padding: 20px;
+    width: 225px;
+    position: fixed;
+    top: 45px;
+    height: calc(100vh - 105px);
+    background-color: #000724;
+    color: white;
+    width: 400px;
+  }
+}

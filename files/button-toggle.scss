@@ -1,0 +1,31 @@
+//same as segmented from FIGMA
+.omp-btn-toggle {
+    .mat-button-toggle-button {
+        background: #F7F7FB;
+        color: #0291DE;
+        font-weight: 600;
+        height: 32px;
+        width: 192px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mat-button-toggle-checked {
+        .mat-button-toggle-button {
+            background-color: #0291DE;
+            color: #fff !important;
+        }
+    }
+}
+
+
+
+/* <div>
+<mat-button-toggle-group name="fontStyle" aria-label="Font Style" class="omp-btn-toggle">
+    <mat-button-toggle value="bold" checked='true'>Delta eCredit</mat-button-toggle>
+    <mat-button-toggle value="italic">Original FOP</mat-button-toggle>
+</mat-button-toggle-group>
+</div> 
+*/
+
+

@@ -1,0 +1,105 @@
+.omp-radio-btn {
+    input[type="radio"] {
+        visibility: hidden;
+    }
+   
+
+    .mat-radio-outer-circle {
+        border: 2px solid #686868 !important;
+    }
+    
+    .mat-radio-inner-circle {
+        background: transparent;
+    }
+
+    &.mat-radio-button .mat-ripple-element {
+        background-color: #0291DE !important;
+    }
+
+
+    .mat-radio-label {
+        font-size: 1.125rem;
+        font-weight: 500 !important;
+        line-height: 1.25rem;
+    }
+
+    .mat-radio-label-content {
+        line-height: 1.5rem !important;  //24px
+        font-size: 1.25rem;  //20px
+        font-weight: 500 !important;
+    }
+    
+    &.mat-radio-checked {
+        .mat-radio-outer-circle {
+            border-color: #0291DE  !important;
+        }
+        .mat-radio-inner-circle {
+            background: #0291DE  !important;
+        }
+    }
+    
+    &:hover {
+        &.mat-radio-button {
+            .mat-focus-indicator {
+                background: #DFF1FA  !important;
+                border-radius: 50%;
+                opacity: .4;
+            }
+        }
+    }
+
+    &.mat-radio-button {
+        &.mat-radio-disabled {
+            .mat-radio-outer-circle {
+                border-color: #A3A3A3  !important; 
+            }
+
+            .mat-radio-inner-circle {
+                background: transparent;
+            }
+
+            .mat-focus-indicator {
+                visibility: hidden;
+            }
+        }
+    }
+}
+
+
+.omp-radio-btn-font-16 {
+    .mat-radio-label {
+        font-size: 1rem; //16px
+    }
+
+    .mat-radio-label-content {
+        font-size: 1rem; //16px
+    }
+}
+
+.omp-radio-btn-font-18 {        //default is set as 18 - this is added additionally
+    .mat-radio-label {
+        font-size: 1.125rem; //18px
+    }
+
+    .mat-radio-label-content {
+        font-size: 1.25rem; //18px
+    }
+}
+
+
+.omp-radio-btn-font-bold {
+    .mat-radio-label {
+        font-weight: 500; 
+    }
+
+    .mat-radio-label-content {
+        font-weight: 500; 
+    }
+}
+
+/*
+if 2 diff fonts variations to be used - then use as below  --- primary class has 18px by default
+<div class="omp-radio-btn omp-radio-btn-font-16 omp-radio-btn-font-bold ">
+</div>
+
+*/

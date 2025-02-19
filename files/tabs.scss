@@ -1,0 +1,221 @@
+mat-tab-group {
+  &.omp-tabs {
+    min-width: 10em;
+    background: transparent;
+    color: #686868;
+    font-weight: 600;
+    font-size: 1rem !important;
+    line-height: 1rem;
+
+    &-bg-white {
+      // <mat-tab-group class="omp-tabs omp-tabs-bg-white" [(selectedIndex)]="selectedIndex" mat-align-tabs="end">
+      .mat-tab-label .mat-tab-label-content {
+        color: #686868;
+        font-weight: 400;
+        font-size: 1rem;
+      }
+    }
+    .mat-tab-label.mat-tab-label-active {
+      .mat-tab-label-content {
+        color: #2e2e2e !important;
+      }
+    }
+    &.mat-primary .mat-ink-bar,
+    &.mat-tab-nav-bar.mat-primary .mat-ink-bar {
+      //when tab is active
+      background-color: #0291de;
+      height: 4px;
+    }
+
+    .mat-tab-header,
+    .mat-tab-nav-bar {
+      border-bottom: none !important;
+    }
+    &.hover {
+      background: #dff1fa;
+      box-shadow: inset 0px -1px 0px #a3a3a3;
+      color: #686868;
+      font-weight: 400;
+    }
+
+    &.cdk-keyboard-focused {
+      background: #e6e6e6;
+      box-shadow: inset 0px -1px 0px #a3a3a3;
+      color: #686868;
+      .mat-focus-indicator {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+      }
+    }
+
+    &:disabled {
+      color: #a3a3a3;
+    }
+  }
+
+  ::ng-deep.mat-form-field.mat-form-field-invalid .mat-form-field-label {
+    color: #f00c00;
+  }
+
+  .mat-form-field {
+    .mat-form-field-wrapper {
+      .mat-form-field-flex {
+        background-color: #f8f8f8;
+        &:hover {
+          background-color: #dff1fa;
+          border-radius: 4px 4px 0px 0px;
+        }
+      }
+    }
+  }
+
+  .mat-form-field.mat-form-field .mat-form-field-label {
+    margin-top: 0px;
+    padding-left: 8px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1rem;
+    font-size: 14px;
+  }
+
+  .mat-tab-label .mat-tab-label-content {
+    line-height: 1rem;
+  }
+
+  .mat-form-field {
+    font-weight: 500;
+    line-height: 1rem;
+    font-family: "Whitney";
+    font-size: 14px;
+  }
+
+  .mat-divider {
+    &.omp-divider {
+      border-top: 2px solid #e6e6e6;
+    }
+  }
+
+  .omp-header-bar {
+    background: #000724;
+    height: 3.5rem;
+
+    &.variation-1920 {
+      width: 1920px;
+    }
+
+    &.variation-1200 {
+      width: 1200px;
+    }
+
+    &.variation-1024 {
+      width: 1024px;
+    }
+
+    &.variation-768 {
+      width: 768px;
+    }
+  }
+}
+
+#tabs-bar {
+  color: var(--font-secondaryColor);
+  background-color: var(--primaryColor-500); // #29304E;
+
+  .mat-tab-label {
+    font-size: var(--font-md);
+    color: var(--font-secondaryColor);
+
+    &.mat-tab-label-active {
+      opacity: 1;
+    }
+  }
+
+  .mat-divider {
+    margin-top: 10px;
+    border-width: 2px;
+    border-top-color: var(--primaryColor-300);
+  }
+
+  .search-icon {
+    padding-right: 1.2rem;
+  }
+
+  .refresh-close {
+    padding-top: 0.5rem;
+  }
+
+  .badge {
+    &.bg-loyalty-badge-tier5-100-nm {
+      background: none;
+      border: 1px solid #ffffff;
+      border-radius: 6px;
+    }
+  }
+
+  .mat-fab.mat-accent {
+    background-color: var(--primaryColor);
+    top: 3px;
+    margin-left: -5px;
+  }
+
+  .mat-icon {
+    height: 1.5rem;
+    width: 3rem;
+  }
+
+  .mat-icon-button .mat-icon,
+  .mat-icon-button i {
+    line-height: 24px;
+    font-size: var(--font-md-200);
+    color: var(--font-secondaryColor);
+  }
+
+  .mat-tab-header,
+  .mat-tab-label {
+    height: 65px;
+  }
+
+  .mat-tab-header-pagination-disabled .mat-tab-header-pagination-chevron,
+  .mat-tab-header-pagination-chevron {
+    border-color: var(--font-secondaryColor);
+  }
+
+  .btn-close-all {
+    top: 14px;
+    color: var(--font-secondaryColor);
+    background: var(--primaryColor-300);
+    padding: 5px 7px;
+    line-height: 1;
+    z-index: 1;
+
+    &-mobile {
+      display: none;
+    }
+  }
+
+  .tab-home-icon {
+    height: 1.0625rem;
+    width: 1.25rem;
+    font-size: 1.1rem;
+    padding-right: 0.3125rem;
+    margin-top: 0.3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  #tabs-bar {
+    .btn-close-all {
+      display: none;
+      &-mobile {
+        display: block;
+        top: 32px;
+        color: var(--font-secondaryColor);
+        background: var(--primaryColor-300);
+        padding: 5px 7px;
+        line-height: 1;
+        z-index: 1;
+      }
+    }
+  }
+}

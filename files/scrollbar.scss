@@ -1,0 +1,40 @@
+::-webkit-scrollbar {
+  width: 0.625rem; //11px
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3.125rem;
+  background-color: var(--primaryColor-200, #878da1);
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: none;
+  border-radius: 3.125rem;
+  border: 0.063rem solid var(--primaryColor-200, #878da1);
+  background-color: transparent;
+}
+
+.omp-white-theme {
+  &::-webkit-scrollbar {
+    width: 0.9rem;
+    background-color: #fff;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 3.125rem;
+    background-color: #A3A3A3;
+    border: 3px solid #fff;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+  }
+
+  // If the design wants to use the third variation (scrollbar has white background and gray color thumb & tracker)
+  // then use the below code to trigger the white-theme color in the ngoninit-- 
+  /* ngOnInit() {
+    var body = document.body;
+    body.classList.add("omp-white-theme"); */
+}

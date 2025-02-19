@@ -1,0 +1,39 @@
+/*Progress Bar Linear*/
+.prog-container {
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.omp-progress-bar {
+  .mat-progress-bar-buffer {
+    background: #dff1fa;
+  }
+  .mat-progress-bar-fill::after {
+    background: #0291de;
+  }
+}
+
+/*Progress Bar Spinner*/
+.omp-spinner {
+  &.mat-progress-spinner circle,
+  .mat-spinner circle {
+    stroke: #0291de;
+  }
+}
+
+.omp-progress-bar-center-aligned {
+  margin: auto;
+}
+
+/* 
+<div class="prog-container">
+<mat-progress-bar class='omp-progress-bar' mode="determinate" value="40"></mat-progress-bar>
+</div>
+
+
+<div>
+
+<mat-spinner class='omp-spinner'></mat-spinner>
+</div> 
+*/

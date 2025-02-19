@@ -1,0 +1,27 @@
+.omp {
+  &-compartment {
+    &-basic {
+      background: linear-gradient(139.44deg, #3a4869 16.78%, #5e75b1 86.8%);
+    }
+
+    &-main {
+      background: linear-gradient(316.63deg, #4e67d5 10.94%, #1b3c77 86.06%);
+    }
+
+    &-firstclass { 
+      background: linear-gradient(314.53deg, #d9105b 15.9%, #821d4a 84.65%); // same as premium - created 2 classes
+    }
+
+    &-comfortplus {
+      background: linear-gradient(116.34deg, #154783 14.78%, #0879cf 84.6%);
+    }
+
+    &-premium {
+      background: linear-gradient(314.53deg, #d9105b 15.9%, #821d4a 84.65%);
+    }
+
+    &-deltaone {
+      background: linear-gradient(141.75deg, #3c0f6a 17.01%, #ac17bf 82.37%);
+    }
+  }
+}

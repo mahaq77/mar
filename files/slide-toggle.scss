@@ -1,0 +1,104 @@
+//Slide toggle  box css start
+.omp-slide-toggle {
+    input[type="checkbox"] {
+        visibility: hidden;
+    }
+
+    .mat-slide-toggle-thumb-container {
+        background: #fff;
+        border-radius: 50%;
+    }
+
+    &.mat-slide-toggle {
+        .mat-slide-toggle-bar {
+            background: #686868;
+        }
+
+        &.mat-disabled {
+            .mat-slide-toggle-bar {
+                background: #CFCFD0;
+            }
+
+            .mat-slide-toggle-thumb-container {
+                background: #A3A3A3;
+            }
+        }
+    }
+
+    &.mat-slide-toggle.mat-checked {
+        .mat-slide-toggle-bar {
+            background: #0291DE;
+        }
+    }
+
+    &.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+        background-color: #0291DE !important;
+    }
+
+    &:hover {
+        &.mat-slide-toggle {
+            .mat-focus-indicator {
+                background: #DFF1FA;
+                border-radius: 50%;
+                opacity: .4;
+            }
+            &.mat-disabled {
+                .mat-focus-indicator {
+                    visibility: hidden;
+                }
+            }
+        }
+    }    
+}
+
+
+.omp-slide-toggle-font-16 {
+    .mat-slide-toggle-label {
+        font-size: 1rem; //16px
+    }
+
+    .mat-slide-toggle-content {
+        font-size: 1rem; //16px
+    }
+}
+
+.omp-slide-toggle-font-18 {        //default is set as 18 - this is added additionally
+    .mat-slide-toggle-label {
+        font-size: 1.125rem; //18px
+    }
+
+    .mat-slide-toggle-content {
+        font-size: 11.25rem; //18px
+    }
+}
+
+
+.omp-slide-toggle-font-bold {
+    .mat-slide-toggle-label {
+        font-weight: 500; 
+    }
+
+    .mat-slide-toggle-contentt {
+        font-weight: 500; 
+    }
+}
+
+
+
+
+/*
+
+Slide Toggle Implementation
+
+ <div>
+        <mat-slide-toggle class='omp-slide-toggle' disabled='true'>
+            Slide me!
+        </mat-slide-toggle>
+
+        <mat-slide-toggle class='omp-slide-toggle'>
+            Slide me!
+        </mat-slide-toggle>
+    </div>
+
+
+*/

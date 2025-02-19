@@ -1,0 +1,144 @@
+.material-icons {
+  &.omp-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+  }
+  &-outlined {
+    &.omp-icons-outlined {
+      font-family: "Material Icons Outlined";  //do not change this as the circle is rendered with this class
+      font-weight: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+    }
+  }
+}
+
+.omp-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+
+  &-outlined {
+    font-family: "Material Icons Outlined";
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+  }
+}
+
+mat-icon {
+  &.omp-icon {
+    width: 16px;
+    height: 16px;
+
+    &.light-ui {    
+      color: #0291de;
+
+      &:hover {
+        background: #f8f8f8;
+        color: #1187cc;
+      }
+
+      &:disabled {
+        color: #a3a3a3;
+      }
+
+      &.cdk-keyboard-focused {
+        background: #f8f8f8;
+        color: #1187cc;
+        border: 1px solid #0291DE;
+      }
+
+      &.selected {          
+        color: #0378bc;        
+      }
+
+    
+    }
+
+    &.dark-ui-cyan {        
+        color: #0291de;
+        //background: #000724;
+        background: transparent !important;
+  
+        &:hover {
+          background: #1D284E;
+          color: #0291DE;
+        }
+  
+        &:disabled {
+          color: #a3a3a3;
+        }
+  
+        &.cdk-keyboard-focused {
+          background: #f8f8f8;
+          color: #1187cc;
+          border: 1px solid #0291DE;
+        }
+  
+        &.selected {          
+          color: #DFF1FA;
+          // <div class='omp-icon' [class.selected]="link.selected">Link Test</div>
+        }
+      }
+
+      &.dark-ui-white {        
+        color: #FFFFFF;
+        background: #000724;
+  
+        &:hover {
+          background: #1D284E;
+          color: #FFFFFF;
+        }
+  
+        &:disabled {
+          color: #0291DE;
+        }
+  
+        &.cdk-keyboard-focused {
+          background: #f8f8f8;
+          color: #1187cc;
+          border: 1px solid #0291DE;
+        }
+  
+        &.selected {          
+          color: #DFF1FA;
+          // <div class='omp-icon' [class.selected]="link.selected">Link Test</div>
+        }
+      }
+
+
+
+
+  }
+}
+
+//<mat-icon>info</mat-icon> usagewise
+//implementation for the icon on the btn

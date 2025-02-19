@@ -1,0 +1,253 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  color: var(--primaryColor-600);
+  background-color: #f0f0f2;
+}
+
+/* .row {
+    margin: 0;
+} */
+
+.mat-icon-button .mat-icon,
+.mat-icon-button i {
+  color: var(--primaryColor);
+}
+
+.layover {
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #555;
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+}
+
+.blue-layover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #18203d;
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+  min-height: 650px;
+  .app-loading .spinner {
+    margin: auto auto auto -47px !important;
+  }
+} /*Not in use*/
+
+.loading {
+  padding: 10px;
+  color: var(--font-primaryColor);
+}
+
+.inner-spinner {
+  height: 100vh;
+}
+
+.icon-fill-path {
+  fill: var(--primaryColor);
+}
+
+.blue-progress .mat-progress-bar-fill::after {
+  background: #273c75;
+}
+.green-progress .mat-progress-bar-fill::after {
+  background-color: #27ae60;
+}
+.blue-progress .mat-progress-bar-buffer {
+  background-color: #3867d6;
+}
+
+/*** UTILS ***/
+.error {
+  color: #e17055;
+  font-weight: 500;
+}
+.full-width {
+  width: 100%;
+}
+.highlight {
+  background-color: rgba(241, 196, 15, 0.7);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(238, 238, 238, 0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(238, 238, 238, 0.75);
+  box-shadow: 5px 5px 5px 0px rgba(238, 238, 238, 0.75);
+}
+
+/*** COLOR PALLETE ***/
+.navy {
+  color: #273c75;
+}
+.nephritis {
+  color: #27ae60;
+}
+.emerald {
+  color: #2ecc71;
+}
+.belize-hole {
+  color: #2980b9;
+}
+.peter-river {
+  color: #3498db;
+}
+.royal-blue {
+  color: #3867d6;
+}
+.alizaran {
+  color: #e74c3c;
+}
+.pomegranate {
+  color: #c0392b;
+}
+.sunflower {
+  color: #f1c40f;
+}
+.orange {
+  color: #f39c12;
+}
+/*** BACKGROUND COLOR PALLETE ***/
+.navy-bg {
+  color: #273c75;
+}
+.nephritis-bg {
+  background-color: #27ae60;
+}
+.emerald-bg {
+  background-color: #2ecc71;
+}
+.belize-hole-bg {
+  background-color: #2980b9;
+}
+.peter-river-bg {
+  background-color: #3498db;
+}
+.royal-blue-bg {
+  background-color: #3867d6;
+}
+.alizaran-bg {
+  background-color: #e74c3c;
+}
+.pomegranate-bg {
+  background-color: #c0392b;
+}
+.sunflower-bg {
+  background-color: #f1c40f;
+}
+.orange-bg {
+  background-color: #f39c12;
+}
+.navy-bg {
+  background-color: #273c75;
+}
+
+.search__backdrop--opacity {
+  opacity: 0;
+}
+
+.cdk-overlay-backdrop.cdk-overlay-backdrop-showing {
+  opacity: 0;
+}
+/* To remove padding around dialog container for Customer Compensation Component */
+.cd-comp--dialog-container .mat-dialog-container {
+  overflow: hidden;
+  width: 85%;
+  height: 100%;
+}
+
+/* Modal responsiveness */
+/* Desktop */
+/* 1200 x 1920 */
+/* 1200 x 960 */
+/* 600 x 1920 */
+/* 600 x 960 */
+/* 1920 x 1200 */
+/* 1920 x 600 */
+/* Tablet */
+/* 768 x 1024 */
+/* 1024 x 768 */
+/* Modals */
+/* 1040 x 616 */
+/* 600 x 1920 */
+/* 600 x 960 */
+
+@media (max-width: 800px) {
+  .cd-dialog--container {
+    border-radius: 0px;
+    max-width: 100% !important;
+    height: 100%;
+  }
+
+  .cd-dialog--container .mat-dialog-content {
+    max-height: 90%;
+  }
+
+  .cd-skymiles--title-container {
+    color: #fff;
+    background-color: var(--loyalty-tier3-300);
+    border-bottom: 1px solid #fff !important;
+  }
+
+  .cd-skymiles--title-container .mat-icon-button .mat-icon,
+  .cd-skymiles--title-container .mat-icon-button i {
+    color: #fff;
+  }
+
+  .cd-comp--card__currency {
+    font-family: "Light";
+    font-size: 20px;
+  }
+}
+
+.cd-dialog--container.no-padding .mat-dialog-container {
+  padding: 0;
+}
+
+.cd-dialog--container .mat-dialog-content {
+  /* Reset default negative margins */
+  margin: 0;
+  padding: 0;
+}
+
+.sms-widget-modal {
+  max-height: 500px;
+  width: 300px;
+  .mat-dialog-container {
+    padding: 0;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+}
+
+// To show Softphone on top of Search Dialog
+.cdk-overlay-container {
+  z-index: 998;
+}
+
+.softphone-overlay-container .cdk-global-overlay-wrapper {
+  z-index: 10003;
+  position: fixed;
+}
+
+.loading {
+  padding: 0;
+}

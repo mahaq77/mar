@@ -1,0 +1,91 @@
+//Check box css start
+.omp-checkbox {
+  input[type="checkbox"] {
+    visibility: hidden;
+  }
+
+  &.mat-checkbox-checked {
+    .mat-checkbox-frame {
+      background: #0291de;
+    }
+
+    &.mat-checkbox-checked.mat-accent .mat-checkbox-ripple .mat-ripple-element {
+      background-color: #0291de;
+    }
+
+    &.mat-checkbox-checked:not(.mat-checkbox-disabled).mat-accent
+      .mat-ripple-element,
+    &.mat-checkbox:active:not(.mat-checkbox-disabled).mat-accent
+      .mat-ripple-element {
+      background: #0291de;
+    }
+
+    &.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background,
+    &.mat-checkbox-checked.mat-accent .mat-checkbox-background {
+      background-color: #0291de;
+    }
+  }
+
+  &:hover {
+    .mat-focus-indicator {
+      background: #dff1fa;
+      border-radius: 10%;
+      opacity: 0.4;
+    }
+  }
+
+  &.mat-checkbox-disabled {
+    .mat-checkbox-frame {
+      border-color: #686868;
+      background-color: transparent;
+      opacity: 1;
+    }
+    .mat-focus-indicator {
+      visibility: hidden;
+    }
+  }
+  &.mat-checkbox-disabled.mat-checkbox-checked .mat-checkbox-background,
+  .mat-checkbox-disabled.mat-checkbox-indeterminate .mat-checkbox-background {
+    background-color: #b0b0b0 !important;
+  }
+}
+
+.omp-checkbox-font-16 {
+  .mat-checkbox-label {
+    font-size: 1rem; //16px
+  }
+
+  .mat-checkbox-label-layout {
+    font-size: 1rem; //16px
+  }
+}
+
+.omp-checkbox-font-18 {
+  //default is set as 18 - this is added additionally
+  .mat-checkbox-label {
+    font-size: 1.125rem; //18px
+  }
+
+  .mat-checkbox-label-layout {
+    font-size: 11.25rem; //18px
+  }
+}
+
+.omp-checkbox-font-bold {
+  .mat-checkbox-label {
+    font-weight: 500;
+  }
+
+  .mat-checkbox-label-layout {
+    font-weight: 500;
+  }
+}
+
+/*
+Usage 
+   <div>
+        <mat-checkbox class='omp-checkbox' disabled='true'>Check me 1</mat-checkbox>
+        <mat-checkbox class='omp-checkbox'>Check me 2</mat-checkbox>
+    </div>
+
+*/

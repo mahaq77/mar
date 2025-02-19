@@ -1,0 +1,58 @@
+//Slider css start
+.omp-slider {  //slider in angular material is same as switch in FIGMA
+    &.mat-slider {
+        .mat-slider-wrapper {
+            background: gray;
+        }
+        .mat-slider-track-fill {
+            background: #0291DE;
+        }
+        .mat-slider-thumb {
+            background: #0291DE;
+        }
+    }
+
+    &:hover {
+        .mat-slider-focus-ring {
+            background: #DFF1FA;
+            transform: scale(1);
+            opacity: .5;
+        }
+    }
+
+    &.cdk-keyboard-focused {
+        .mat-slider-focus-ring {
+            background: #DFF1FA;
+            transform: scale(1);
+            opacity: .5 !important;
+            border: 1px solid #0291DE;
+        } 
+    }
+
+    &.mat-slider-disabled {
+        .mat-slider-wrapper {
+            background: transparent;
+        }
+        .mat-slider-track-fill {
+            background: #A3A3A3;
+        }
+        .mat-slider-thumb {
+            background: #A3A3A3;
+            transform: scale(.7);
+        }
+        .mat-slider-focus-ring {
+            opacity: 0;
+        }
+    }
+     
+}
+
+/*
+Slider Implementation
+    <div>
+        <mat-slider class='omp-slider' value="50" aria-label="unit(s)" disabled='true'></mat-slider>
+        <mat-slider class='omp-slider' value="50" aria-label="unit(s)"></mat-slider>
+    </div>
+
+*/
+

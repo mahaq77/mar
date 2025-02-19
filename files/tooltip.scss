@@ -1,0 +1,85 @@
+
+.omp-tooltip {
+    // <span class="omp-tooltip-container-content"> 
+    &-container {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        
+        .arrow--up {
+            width: 0;
+            height: 0;
+            border-left: 0.625rem solid transparent;
+            border-right: 0.625rem solid transparent;
+            border-bottom: 0.625rem solid #0291DE;
+            position: absolute;
+            top: -0.625rem;
+            visibility: hidden;  //arrow is made invisible
+        }
+        
+        &-content {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            top: 100%;
+            height: auto;
+            background-color: #29304E; //not in AEM
+            color: var(--font-secondaryColor, #ffffff);
+            z-index: 100;
+            padding: 0.938rem;
+            text-align: left;
+            left: 0.5rem;
+            min-width: 9.688rem;
+            font-size: 0.875rem;
+            line-height: 1.063rem;
+            border-radius: 4px;
+            margin-top: 0 !important;
+            a {
+                color: var(--font-secondaryColor, #ffffff);
+            }
+
+            p {
+                display: flex;
+                align-items: center;
+                span {
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        &-content-light { //add this class to show the white/light tooltip  <span class="omp-tooltip-container-content omp-tooltip-container-content-light">           
+            background-color: var(--font-secondaryColor, #ffffff);
+            color: #2E2E2E;           
+        }
+        
+        &:hover {
+            .omp-tooltip-container-content {
+                display: block;
+            }
+        }
+    }
+    
+    &-left {
+        left: unset;
+        right: -1.5rem;
+        .arrow--up {
+            left: unset;
+            right: 1.5rem;
+        }
+    }
+}
+
+.mat-tooltip {
+    color: white !important;
+    background-color: #29304E !important; 
+}
+
+::ng-deep .mat-tooltip.omp-tooltip {
+    color: #ffffff !important;
+    background-color: #29304E !important; 
+    padding-top: 10px;
+    font-family: "Whitney";
+    font-size: .9rem;
+    max-width: unset;
+    overflow: visible !important;
+}
